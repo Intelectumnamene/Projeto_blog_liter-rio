@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Garante que padding e borda não afetem a largura/altura dos elementos */
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #757373; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    color: #fff; /* Cor do texto */
+}
+
+/* Estilos para o menu de navegação */
+header nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Alinha os itens em linha */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 0; /* Remove o espaçamento interno */
+    margin: 0; /* Remove a margem */
+}
+
+/* Estilos para os itens do menu */
+header nav ul li {
+    margin: 0; /* Remove a margem dos itens da lista */
+}
+
+/* Estilos para os links */
+header nav ul li a {
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+    padding: 8px 16px; /* Espaçamento interno dos links */
+    transition: color 0.3s, background-color 0.3s; /* Suaviza a mudança de cor */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Efeito de hover para os links */
+header nav ul li a:hover {
+    color: #333; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos específicos para o link de Login */
+header nav .login {
+    position: absolute; /* Permite posicionar o link de forma absoluta */
+    right: 20px; /* Distância da borda esquerda */
+    top: 20px; /* Distância do topo */
+}
+
+header  nav .logout{
+    position: absolute; /* Permite posicionar o link de forma absoluta */
+    right: 100px; /* Distância da borda esquerda */
+    top: 20px; /* Distância do topo */
+
+}
+.contato {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contato h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #555;
+}

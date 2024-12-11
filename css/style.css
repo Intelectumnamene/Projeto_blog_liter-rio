@@ -1,0 +1,115 @@
+/* Remove o espaçamento inicial padrão de todos os elementos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Garante que padding e borda não afetem a largura/altura dos elementos */
+}
+
+html, body {
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Aston Script';
+    src: url('fonts/Aston Script.ttf') format('truetype'); /* Certifique-se de que o caminho esteja correto */
+    font-weight: normal; /* Peso da fonte */
+    font-style: normal; /* Estilo da fonte */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #757373; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    color: #fff; /* Cor do texto */
+}
+
+/* Estilos para o menu de navegação */
+header nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Alinha os itens em linha */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 0; /* Remove o espaçamento interno */
+    margin: 0; /* Remove a margem */
+}
+
+/* Estilos para os itens do menu */
+header nav ul li {
+    margin: 0; /* Remove a margem dos itens da lista */
+}
+
+/* Estilos para os links */
+header nav ul li a {
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+    padding: 8px 16px; /* Espaçamento interno dos links */
+    transition: color 0.3s, background-color 0.3s; /* Suaviza a mudança de cor */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Efeito de hover para os links */
+header nav ul li a:hover {
+    color: #333; /* Cor do texto ao passar o mouse */
+}
+
+header nav .login {
+    position: absolute; /* Permite posicionar o link de forma absoluta */
+    right: 20px; /* Distância da borda esquerda */
+    top: 20px; /* Distância do topo */
+}
+
+header  nav .logout{
+    position: absolute; /* Permite posicionar o link de forma absoluta */
+    right: 100px; /* Distância da borda esquerda */
+    top: 20px; /* Distância do topo */
+
+}
+.container {
+    display: flex;
+    flex-direction: column; /* Permite empilhar elementos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente se necessário */
+    height: 100vh; /* Altura total da janela */
+}
+
+.fundo {
+    width: 80%; /* Ajuste o tamanho da div conforme necessário */
+    height: 400px; /* Altura da div */
+    background-image: url('/css/image/fundo.jpg'); /* Caminho atualizado */
+    background-size: cover; /* Faz a imagem cobrir toda a div */
+    background-position: center; /* Centraliza a imagem */
+    border-radius: 10px; /* Adiciona cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+}
+
+/* Estilos para o título */
+.título {
+    text-align: center; /* Centraliza o texto do título */
+    font-size: 2em; /* Ajuste do tamanho da fonte, se desejado */
+    margin-top: 80px; /* Espaço entre o título e a parte superior da div */
+    margin-bottom: -110px; /* Espaço entre o título e a imagem */
+    font-family: 'Aston Script', cursive; /* Fonte personalizada */
+    color:#757373
+}
+
+
+.entar {
+    list-style: none; /* Remove a bolinha do li */
+    margin-top: 20px; /* Adiciona um espaçamento superior */
+    text-align: right; /* Alinha o link à direita */
+}
+
+.entar li a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #333;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color:#757373; /* Cor de fundo do botão */
+    color: white;
+    border-radius: 5px;
+}
+
+.entar li a:hover {
+    background-color:#333 /* Cor ao passar o mouse */
+}

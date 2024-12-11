@@ -1,0 +1,32 @@
+header h1{
+    text-align: center;
+}
+
+header  nav .logout{
+    position: absolute; /* Permite posicionar o link de forma absoluta */
+    right: 100px; /* Distância da borda esquerda */
+    top: 20px; /* Distância do topo */
+
+}
+
+/* Estilos para a seção de logout */
+#logout {
+    max-width: 400px; /* Largura máxima da seção */
+    margin: 20px auto; /* Centraliza a seção */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #fff; /* Cor de fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para os links na seção de logout */
+#logout a {
+    color: #757373; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+#logout a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}

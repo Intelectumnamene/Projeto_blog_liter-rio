@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/style_contato.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <!-- Cabeçalho com Navegação -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li> <!-- Link para a página de contato -->
+                <li><a class="login" href="login.html">Login</a></li>
+                <li><a class="logout" href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="contato">
+            <h1>Contato</h1>
+            <p>Tem alguma dúvida ou quer fazer parte do nosso grupo literário? Entre em contato conosco preenchendo o formulário abaixo!</p>
+            
+            <!-- Formulário de Contato -->
+            <form action="envio_formulario.php" method="POST"> <!-- Ajuste o action para a página que processará o envio -->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Grupo Literário. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
